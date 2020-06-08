@@ -48,9 +48,9 @@
         <p></p>
   
         <% var currentTime = new Date()%>
-        <% var currentTimeToUse = currentTime.getHours() + ":" + currentTime.getMinutes() + ":" + currentTime.getSeconds()%>
+        <% var currentTimeToUse = (currentTime.getHours()-5) + ":" + currentTime.getMinutes() + ":" + currentTime.getSeconds()%>
         <%= currentTimeToUse %>
-        
+
         <h3 td align="center">Clase Actual - Hora Actual:
           <% if(currentTimeToUse >= "7:00:00" && currentTimeToUse <= "7:49:59") {%>
             <span>M1</span>
